@@ -13,13 +13,13 @@
 ## 项目经历  
 ### 1. VB.net+VBA
 **基于VB.NET与VBA的药物采购数据库分析管理系统：**采用VB.NET开发友好的用户界面，使用VBA 宏语言编写后台数据处理程序，对Excel格式的医疗机构药物采购数据进行分类统计运算。通过VB.NET调用VBA宏代码，使得该系统既操作简便，又保证了大数据的处理速度。实现了对全市医疗机构网上采购情况，以及各区医疗机构网上采购情况的统计分析，并提供了报表直接导出功能，使药物采购数据的统计管理工作更加高效。
-![asd](http://i.imgur.com/N7A4l8N.jpg)
-<center>![](http://i.imgur.com/J3sD1Ue.jpg)</center>
+![](http://i.imgur.com/N7A4l8N.jpg)
+![](http://i.imgur.com/J3sD1Ue.jpg)
 
 ### 2. VB.net +Access
 **基于VB.net与Access的卫生人才库系统：**在vs2015的VB.NET平台中，连接access数据库，开发出了一套界面人性化，信息查询和统计准确、快捷、灵活、方便，数据存储安全可靠的卫生人才库系统，管理员利用该系统可以方便快捷的完成卫生人才信息的录入、修改、删除、查询、统计和输出等工作。
-<center>![](http://i.imgur.com/gLzIUR7.jpg)</center>  
-<center>![](http://i.imgur.com/gQrFCum.jpg)</center>  
+![](http://i.imgur.com/gLzIUR7.jpg)
+![](http://i.imgur.com/gQrFCum.jpg)  
 
 ### 3. 基于RFID技术的医疗仪器定位应用
 以KL9201AR2000读写器一体机和KLP9525抗金属远距离标签为硬件基础，学习了国内外定位算法，提出基于PSO-BP模型的RSSI定位算法，用MATLAB进行相关的仿真实验。  
@@ -36,6 +36,6 @@
 
 ## 个人荣誉
 ### 1. 全国大学生电子设计大赛江苏省一等奖 
-<center>![](http://i.imgur.com/F4Ug5cN.jpg)</center>   
+![](http://i.imgur.com/F4Ug5cN.jpg)   
 ### 2. “挑战杯”江苏省大学生课外学术科技作品竞赛三等奖
-<center>![](http://i.imgur.com/emZgknT.jpg)</center>  
+![](http://i.imgur.com/emZgknT.jpg)  
