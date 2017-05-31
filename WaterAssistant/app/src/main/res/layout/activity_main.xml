@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context="lsxx.waterassistant.MainActivity">
+
+
+    <TextView
+        android:id="@+id/tvCommand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="记录"
+        android:textSize="20dp"
+        android:visibility="gone" />
+
+    <SurfaceView
+        android:id="@+id/sfvDraw"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        android:background="#00000000" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:scrollbars="vertical">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:stretchColumns="0,1,2,3">
+
+                <TableRow>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/ibtnHand"
+                            style="@style/imagebutton_style"
+                            android:src="@drawable/hand" />
+
+                        <TextView
+                            style="@style/textview_style"
+                            android:text="@string/str_washhand" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/ibtnFood"
+                            style="@style/imagebutton_style"
+                            android:src="@drawable/food" />
+
+                        <TextView
+                            style="@style/textview_style"
+                            android:text="@string/str_food" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/ibtnBath"
+                            style="@style/imagebutton_style"
+                            android:src="@drawable/bath" />
+
+                        <TextView
+                            style="@style/textview_style"
+                            android:text="@string/str_bath" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/ibtnFlush"
+                            style="@style/imagebutton_style"
+                            android:src="@drawable/flush" />
+
+                        <TextView
+                            style="@style/textview_style"
+                            android:text="@string/str_flush" />
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/ibtnCloth"
+                            style="@style/imagebutton_style"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/cloth" />
+
+                        <TextView
+                            style="@style/textview_style"
+                            android:text="@string/str_cloth" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/ibtnClean"
+                            style="@style/imagebutton_style"
+                            android:src="@drawable/clean" />
+
+                        <TextView
+                            style="@style/textview_style"
+                            android:text="@string/str_clean" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/ibtnCar"
+                            style="@style/imagebutton_style"
+                            android:src="@drawable/car" />
+
+                        <TextView
+                            style="@style/textview_style"
+                            android:text="@string/str_car" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/ibtnUndefinition2"
+                            style="@style/imagebutton_style"
+                            android:src="@drawable/update"/>
+
+                        <TextView
+                            style="@style/textview_style"
+                            android:text="@string/str_undefinition" />
+                    </LinearLayout>
+                </TableRow>
+            </TableLayout>
+
+            <LinearLayout
+                android:id="@+id/lnlSet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tvSet"
+                    style="@style/textviewtitle_style"
+                    android:text="每次用水量：" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <SeekBar
+                        android:id="@+id/skbValue"
+                        android:layout_width="200dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="10dp"
+                        android:max="1000"
+                        android:progress="100" />
+
+                    <Button
+                        android:id="@+id/btnOK"
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/shape_rectbutton"
+                        android:text="确定"
+                        android:textSize="@dimen/font_mediatesize" />
+
+                    <TextView
+                        android:id="@+id/tvUnit"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@id/btnOK"
+                        android:gravity="center"
+                        android:text="升"
+                        android:textSize="@dimen/font_mediatesize" />
+
+                    <TextView
+                        android:id="@+id/tvCurrentValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="0dp"
+                        android:layout_toLeftOf="@id/tvUnit"
+                        android:gravity="center_vertical"
+                        android:text="12"
+                        android:textSize="@dimen/font_mediatesize" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/textviewtitle_style"
+                android:text="用水记录" />
+
+            <lsxx.waterassistant.ExpandListView
+                android:id="@+id/lvRecord"
+                style="@style/listview_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:headerDividersEnabled="true"
+                android:scrollbars="vertical">
+
+            </lsxx.waterassistant.ExpandListView>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

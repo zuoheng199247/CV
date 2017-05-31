@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <lsxx.waterassistant.SwipeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/ibtnStyle"
+                style="@style/listimagebutton_style" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/component_margin"
+                    android:scrollbars="horizontal"
+                    android:text="标题"
+                    android:textSize="@dimen/font_mediatesize" />
+
+                <TextView
+                    android:id="@+id/tvContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/component_margin"
+                    android:layout_marginTop="5dp"
+                    android:textSize="@dimen/font_smallsize" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:id="@+id/tvId"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="60dp"
+            android:layout_height="match_parent">
+
+            <!--修改未150dp完全符合-->
+            <RelativeLayout
+                android:id="@+id/delete_button"
+                android:clickable="true"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:background="#ff0000">
+                <View
+                    android:layout_centerInParent="true"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:background="@drawable/trash"/>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </lsxx.waterassistant.SwipeLayout>
+</LinearLayout>
